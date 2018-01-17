@@ -64,9 +64,10 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'bookstore.pipelines.BookstorePipeline': 300,
-#}
+ITEM_PIPELINES = {
+   'bookstore.pipelines.BookstorePipeline': 300,
+}
+DOWNLOAD_DELAY = 5
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html

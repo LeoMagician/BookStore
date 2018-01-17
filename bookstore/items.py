@@ -10,5 +10,9 @@ import scrapy
 
 class BookstoreItem(scrapy.Item):
     # define the fields for your item here like:
-    # name = scrapy.Field()
+    title = scrapy.Field()
+    url = scrapy.Field()
+    rank = scrapy.Field()
+    comment = scrapy.Field()
+    recommendation = scrapy.Field()
     pass
